@@ -17,10 +17,4 @@ public class LoggerHelper {
 		
 	}
 	
-	public static void main(String[] args) {
-		Logger log = LoggerHelper.getLogger(LoggerHelper.class);
-		log.info("logger is configured");
-	}
-	
-	
 }
