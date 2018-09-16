@@ -3,6 +3,8 @@ package com.syca.helper.logger;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
+import com.syca.helper.resource.ResourceHelper;
+
 public class LoggerHelper {
 
 	private static boolean root=false;
@@ -11,7 +13,7 @@ public class LoggerHelper {
 		if(root) {
 			return Logger.getLogger(cls);
 				}
-		PropertyConfigurator.configure("C:/Users/lenovo/git/rcclframework/syca/src/main/resources/configfile/log4j.properties");
+		PropertyConfigurator.configure(ResourceHelper.getResourcePath("src/main/resources/configfile/log4j.properties"));
 		root = true;
 		return Logger.getLogger(cls);
 		
