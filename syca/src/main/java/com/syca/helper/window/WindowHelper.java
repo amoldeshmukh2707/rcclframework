@@ -72,4 +72,4 @@ public class WindowHelper {
 		log.info("navigating forward");
 		driver.navigate().forward();
 	}
-}s
+}
